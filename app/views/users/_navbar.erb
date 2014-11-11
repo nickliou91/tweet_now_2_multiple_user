@@ -1,0 +1,16 @@
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <% if login? %>
+      <li style= "float:right;"><a href="/login"> <%= username %> </a></li>
+      <li style= "float:right;"><a href="/logout">Logout</a></li>
+    </ul>
+  </div>
+</div>
+<% else %> 
+	<li style= "float:right;"><a style="float:right;"href="/login">Login</a></li>
+ 
+<% end %>
